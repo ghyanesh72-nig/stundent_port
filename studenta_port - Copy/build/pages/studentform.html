@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-section Form</title>
+  <!-- Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Main Styling -->
+  <link href="../assets/css/argon-dashboard-tailwind.css?v=1.0.1" rel="stylesheet" />
+</head>
+
+<body class="m-0 font-sans antialiased font-normal bg-white text-start text-base leading-default text-slate-500">
+  <main class="mt-0 transition-all duration-200 ease-in-out">
+    <section class="min-h-screen flex items-center justify-center">
+      <!-- Simple section with clean form container -->
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full max-w-full px-3 mx-auto mt-0 md:flex-0 shrink-0 md:w-7/12 lg:w-5/12 xl:w-4/12">
+            <div class="relative z-0 flex flex-col min-w-0 break-words bg-white border-0 shadow-xl rounded-2xl bg-clip-border">
+              <div class="p-6 mb-0 text-center bg-white border-b-0 rounded-t-2xl">
+                <h5>Registration Form</h5>
+              </div>
+
+              <div class="flex-auto p-6">
+                <form id="studentForm">
+                  <!-- Personal Details Section -->
+                  <div class="form-page" id="page-1">
+                    <h6 class="font-semibold mb-2">Personal Information</h6>
+                    <div class="mb-4">
+                      <input id="firstname" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="First Name" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="lastname" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Last Name" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="usn" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="USN (Enter number if not given)" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="mobile" type="number" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Mobile Number" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="email" type="email" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Email" />
+                    </div>
+                  </div>
+
+                  <!-- Academic Information Section -->
+                  <div class="form-page" id="page-2" style="display:none;">
+                    <h6 class="font-semibold mb-2">Academic Information</h6>
+                    <div class="mb-4">
+                      <input id="degreeStream" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Degree Stream" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="hobbies" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Hobbies" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="interestTechnical" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Technical Interests" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="interestExtracurricular" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Extracurricular Interests" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="interestSports" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Sports Interests" />
+                    </div>
+                  </div>
+
+                  <!-- Technical Skills and Interests Section -->
+                  <div class="form-page" id="page-3" style="display:none;">
+                    <h6 class="font-semibold mb-2">Technical Skills and Interests</h6>
+                    <div class="mb-4">
+                      <input id="certifications" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Certifications" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="internships" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Internships" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="learnSkill" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Learn Skills" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="miniProject" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Mini Projects" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="majorProject" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Major Projects" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="researchPapers" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Research Papers" />
+                    </div>
+                  </div>
+
+                  <!-- Extracurricular and Personal Interests Section -->
+                  <div class="form-page" id="page-4" style="display:none;">
+                    <h6 class="font-semibold mb-2">Extracurricular and Personal Interests</h6>
+                    <div class="mb-4">
+                      <input id="achievements" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Achievements" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="managementPgcet" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="Management PGCET" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="sslc" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="SSLC Percentage" />
+                    </div>
+                    <div class="mb-4">
+                      <input id="12thPuc" type="text" class="placeholder:text-gray-500 text-sm focus:shadow-primary-outline leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-blue-500 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" placeholder="12th PUC Percentage" />
+                    </div>
+                  </div>
+
+                  <!-- Navigation Buttons -->
+                  <div class="flex justify-between mt-4">
+                    <button id="prevButton" type="button" class="w-32 p-2 bg-blue-500 text-white rounded">Previous</button>
+                    <button id="nextButton" type="button" class="w-32 p-2 bg-blue-500 text-white rounded">Next</button>
+                    <button id="submitButton" type="submit" class="w-32 p-2 bg-blue-500 text-white rounded" style="display:none;">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../studentjs.js"></script>
+</body>
+
+</html>
